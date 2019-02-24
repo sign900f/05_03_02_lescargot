@@ -1,0 +1,90 @@
+[
+   {
+      "nr":"1",
+      "navn":"Østers",
+      "kategori":"tilbordet",
+      "beskrivelse":"estragónvinagrette, citron.",
+      "pris":"115 per kuvert",
+      "billede":"osters"
+   },
+   {
+      "nr":"2",
+      "navn":"Snegle",
+      "kategori":"tilbordet",
+      "beskrivelse":"Fourme de Catal, persille.",
+      "pris":"115 per kuvert",
+      "billede":"snegle"
+   },
+   {
+      "nr":"3",
+      "navn":"Blæksprutte",
+      "kategori":"forret",
+      "beskrivelse":"havtaske, foråsløg.",
+      "pris":"155,-",
+      "billede":"blaeksprutte"
+   },
+   {
+      "nr":"4",
+      "navn":"Kammuslinger",
+      "kategori":"forret",
+      "beskrivelse":"pore, ærter, spæk.",
+      "pris":"189,-",
+      "billede":"kammuslinger"
+   },
+   {
+      "nr":"5",
+      "navn":"Halloumi",
+      "kategori":"forret",
+      "beskrivelse":"foie gras mousse, skalotteløg, palmekål",
+      "pris":"175,-",
+      "billede":"ost"
+   },
+   {
+      "nr":"6",
+      "navn":"Beef bourguignon",
+      "kategori":"hovedret",
+      "beskrivelse":"vilde svampe, hvidløg, løv.",
+      "pris":"289,-",
+      "billede":"beef"
+   },
+   {
+      "nr":"7",
+      "navn":"Havkat",
+      "kategori":"hovedret",
+      "beskrivelse":"græsker, snegle, smørsauce.",
+      "pris":"269,-",
+      "billede":"havkat"
+   },
+   {
+      "nr":"8",
+      "navn":"Krondyrsfilet",
+      "kategori":"hovedret",
+      "beskrivelse":"ærter, gulerødder, mandler",
+      "pris":"289,-",
+      "billede":"krondyr"
+   },
+   {
+      "nr":"9",
+      "navn":"Limesoufflé",
+      "kategori":"dessert",
+      "beskrivelse":"karameltuile, kokos, is. ",
+      "pris":"155,-",
+      "billede":"is"
+   },
+   {
+      "nr":"10",
+      "navn":"Tarte tatin",
+      "kategori":"dessert",
+      "beskrivelse":"skum, ribs, pære.",
+      "pris":"115,-",
+      "billede":"tarte"
+   },
+   {
+      "nr":"11",
+      "navn":"Mousse au chocolate",
+      "kategori":"dessert",
+      "beskrivelse":"brombær, hvid chokolade, guld.",
+      "pris":"135,-",
+      "billede":"mousse"
+   }
+]

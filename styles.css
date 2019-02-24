@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+
+/***************************************************   SKRIFTTYPER  ***************************************************************/
+
+@font-face {
+    font-family: 'latobold';
+    src: url('skrifttyper/lato/lato-bold-webfont.woff2') format('woff2'),
+        url('skrifttyper/lato/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'latoitalic';
+    src: url('skrifttyper/lato/lato-italic-webfont.woff2') format('woff2'),
+        url('skrifttyper/lato/lato-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('skrifttyper/lato/lato-regular-webfont.woff2') format('woff2'),
+        url('skrifttyper/lato/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'bestliferegular';
+    src: url('skrifttyper/bestlife/bestlife-webfont.woff2') format('woff2'),
+        url('skrifttyper/bestlife/bestlife-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sharpe_personalthin_italic';
+    src: url('skrifttyper/sharpe/sharpethit_personal-webfont.woff2') format('woff2'),
+        url('skrifttyper/sharpe/sharpethit_personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+header nav a:link,
+header nav a:visited,
+header nav a:active {
+    font-family: 'latoregular', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #8fc8d3;
+
+}
+
+h1,
+h2 {
+    font-family: 'sharpe_personalthin_italic';
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    line-height: 7vw;
+    font-size: 4vw;
+}
+
+/* mouse over link */
+
+header nav a:hover {
+    color: #89f05c;
+
+}
+
+/***************************************************   HEADER  ***************************************************************/
+#background_start {
+    background-image: url("img/LeTroisCochon_ChrisTonnesen_5215.jpg");
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.white {
+    width: 100vw;
+    height: 56.25vw;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+}
+
+#logo {
+    background-image: url("img/logo.svg");
+    background-size: 100%;
+    width: 30vw;
+    height: 34vw;
+    z-index: 2;
+    position: absolute;
+    top: 11vw;
+    margin: 0 32vw 0;
+}
+
+
+/***************************************************   OM  ***************************************************************/
+
+#om {
+    padding: 15vw;
+}
+
+
+#om .text {
+    padding-bottom: 15vw;
+}
+
+#om .billede {
+    padding-bottom: 15vw;
+}
+
+
+/***************************************************   KNAPPER  ***************************************************************/
+
+
+
+.rulle {
+    background-image: url("img/letroiscochoncopenhagen5.jpg");
+    height: 100vw;
+    width: 100vw;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#knapper button {
+    background-color: rgba(255, 255, 255, 0.78);
+    width: 55vw;
+    height: 25vw;
+    position: relative;
+    left: 20vw;
+    font-family: 'bestliferegular';
+    font-size: 9vw;
+    border-style: none;
+}
+
+#knapper button:hover {
+    background-color: rgba(255, 255, 255, 0.92);
+
+}
+
+#knapper .knap1 {
+    top: -85vw;
+}
+
+
+#knapper .knap2 {
+    top: -75vw;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/***************************************************   Galleri  ***************************************************************/
+
+#galleri {
+    background-color: #584833;
+    height: auto;
+    padding: 3vw;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+}
+
+.galleri {
+    margin: 1.5vw 0 1.5vw 0;
+}
+
+
+
+
+/***************************************************   info  ***************************************************************/
+
+#info {}
+
+#info .text {
+    text-align: center;
+}
+
+
+.aabningstider .billede {
+    background-image: url(img/tid.svg);
+    width: 13vw;
+    height: 13vw;
+    background-size: 100%;
+    margin: auto;
+    margin-top: 25vw;
+
+}
+
+.adresse .billede {
+    background-image: url(img/sted.svg);
+    width: 10vw;
+    height: 15.5vw;
+    background-size: 100%;
+    margin: auto;
+    margin-top: 20vw;
+}
+
+
+/***************************************************   footer  ***************************************************************/
+
+footer {
+    background-color: #f2e8af;
+
+    font-size: 2vw;
+    margin-top: 25vw;
+    color: #5f563d;
+    padding: 5vw;
+    line-height: 7vw;
+}
+
+footer p {
+
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5vw;
+    color: #5f563d;
+    line-height: 5vw;
+}
+
+
+
+/***************************************************   tablet  ***************************************************************/
+
+@media only screen and (min-width: 550px) {
+    #galleri {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.86fr 2fr;
+
+    }
+
+
+    .galleri {
+        margin: 1vw;
+    }
+
+    .galleri:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+
+    .galleri:nth-child(2) {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+
+    .galleri:nth-child(3) {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+
+    .galleri:nth-child(4) {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+    }
+
+    #info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #info p {
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+
+    .aabningstider .billede {
+        margin-top: 15vw;
+        width: 8vw;
+        height: 8vw;
+
+    }
+
+    .adresse .billede {
+        margin-top: 13.7vw;
+        width: 6vw;
+        height: 9.3vw;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 800px) {
+    p {
+        line-height: 4vw;
+        font-size: 1.5vw;
+
+    }
+
+
+
+    .rulle {
+        height: 50vw;
+    }
+
+    #knapper button {
+        font-size: 5vw;
+        width: 30vw;
+        height: 15vw;
+    }
+
+    #knapper .knap1 {
+        top: -40vw;
+        left: 15vw;
+    }
+
+
+    #knapper .knap2 {
+        top: -25vw;
+        left: 25vw;
+    }
+
+    #galleri {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .galleri {
+        margin: 0.5vw;
+    }
+
+
+    .galleri:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+
+    .galleri:nth-child(2) {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+
+    .galleri:nth-child(3) {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+
+    .galleri:nth-child(4) {
+        grid-row: 1 / 3;
+        grid-column: 3 / 5;
+    }
+
+    .galleri4 {
+        max-width: 575px;
+    }
+
+    footer p {
+        margin: 1vw 0 1vw 5vw;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+
+    footer {
+        margin-top: 10vw;
+        padding: 3vw;
+    }
+}
+
+
+
+/***************************************************   web  ***************************************************************/
+
+@media only screen and (min-width: 1000px) {
+
+    p {
+        line-height: 3vw;
+        font-size: 1.3vw;
+        padding-right: 1vw;
+
+    }
+
+    #om img {
+        padding-left: 1vw;
+    }
+
+    #om {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 8vw;
+    }
+
+
+    .rulle {
+        height: 45vw;
+    }
+
+    #knapper button {
+        font-size: 4vw;
+        width: 25vw;
+        height: 11vw;
+    }
+
+    #knapper .knap1 {
+        top: -35vw;
+        left: 20vw;
+    }
+
+
+    #knapper .knap2 {
+        top: -20vw;
+        left: 30vw;
+    }
+
+    footer p {
+        font-size: 1.5vw;
+        line-height: 3vw;
+    }
+}

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            margin: 0vw;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .filter {
+            height: 2vw;
+            width: 5vw;
+        }
+
+
+        .sorter {
+            height: 2vw;
+            width: 7.615vw;
+        }
+
+
+
+        /********************   skrifttyper   *******************/
+
+
+        h3 {
+            font-family: 'latoregular', sans-serif;
+            font-size: 4vw;
+            margin-top: 10vw;
+            font-weight: 400;
+        }
+
+        .overskrift h2 {
+            font-size: 5vw;
+            margin: 15vw 0 0;
+            text-align: center;
+
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-family: 'sharpe_personalthin_italic';
+        }
+
+        h1 {
+            font-family: 'bestliferegular';
+            text-align: center;
+            margin-top: 35vw;
+
+        }
+
+        /********************   HEADER   *******************/
+        header .logo {
+            width: 20vw;
+            right: 5vw;
+            top: 5vw;
+            position: fixed
+        }
+
+        header .pil {
+            width: 8vw;
+            left: 8vw;
+            top: 15.5vw;
+            position: fixed
+        }
+
+
+
+        /********************   KNAPPER   *******************/
+
+        #buttons {
+            margin-top: 15vw;
+        }
+
+
+        #filtrer {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin-bottom: 2vw;
+
+        }
+
+        #sortering {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        .filter {
+            height: 6vw;
+            width: auto;
+        }
+
+
+        .sorter {
+            height: 6vw;
+            width: auto;
+        }
+
+
+
+        .filter,
+        .sorter {
+            background-color: white;
+            border-radius: 0.3vw;
+            margin: .5vw;
+            font-size: 2.5vw;
+            border-style: none;
+
+        }
+
+
+        .valgt {
+            border: 0.8px solid black;
+            padding: 1vw;
+        }
+
+        /********************   MAIN CONTENT   *******************/
+
+        main {
+            margin: 0 7vw;
+        }
+
+        .enkelt {
+            margin: 5vw 5vw 20vw;
+        }
+
+        .enkelt:hover {
+            cursor: pointer;
+        }
+
+        .tekst {
+            text-align: center;
+        }
+
+
+        .billedespek {
+            overflow: hidden;
+        }
+
+        /********************   single pop up   *******************/
+
+        #single {
+            width: 100vw;
+            height: 100%;
+            position: fixed;
+            overflow: scroll;
+            background-color: rgba(255, 255, 255, 0.95);
+            display: none;
+            z-index: 1;
+            top: 0vw;
+        }
+
+
+
+        #luk button {
+            font-family: 'sharpe_personalthin_italic';
+            background-color: white;
+            margin: 4.5vw 0 -5vw 4.5vw;
+            font-size: 4.5vw;
+            border-style: none;
+        }
+
+
+
+        /********************   footer   *******************/
+
+        #kontakt p {
+            background-color: #f2e8af;
+            font-family: 'Lato', sans-serif;
+            color: #5f563d;
+
+        }
+
+
+
+        /********************   mediaquery   *******************/
+
+
+        @media only screen and (min-width: 650px) {
+            h1 {
+                font-size: 8vw;
+                margin: 30vw 0 0 0;
+            }
+
+            h2 {
+                font-size: 3vw;
+                margin-bottom: 8vw;
+
+            }
+
+            p {
+                font-size: 3vw;
+
+            }
+
+            h3 {
+                font-size: 3vw;
+                margin-top: 5vw;
+            }
+
+            header .logo {
+                width: 15vw;
+            }
+
+            header .pil {
+                width: 7vw;
+                top: 13.5vw;
+            }
+
+            .filter,
+            .sorter {
+                font-size: 2vw;
+                height: 4vw;
+            }
+
+            #filtrer {
+
+                margin-bottom: 1vw;
+
+            }
+
+            .valgt {
+                padding: 0;
+            }
+
+            #ret {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            #buttons {
+                margin: 5vw;
+            }
+
+            .enkelt {
+                margin: 2vw;
+            }
+
+            main {
+                margin: 2vw;
+            }
+
+        }
+
+        @media only screen and (min-width: 900px) {
+            h1 {
+                font-size: 5vw;
+                margin: 25vw;
+            }
+
+            h2 {
+                font-size: 1.6vw;
+                margin-bottom: 8vw;
+
+            }
+
+            #indhold h2 {
+                font-size: 4vw;
+                margin: 7vw 0 2vw 0;
+
+            }
+
+            p {
+                font-size: 2vw;
+
+            }
+
+            .enkelt h3 {
+                font-size: 2vw;
+                margin-top: 7vw;
+            }
+
+
+            .overskrift h2 {
+                font-size: 2.5vw;
+                margin: 5vw 0 0 0;
+            }
+
+            header .logo {
+                width: 10vw;
+            }
+
+            header .pil {
+                width: 5vw;
+                top: 11.5vw;
+            }
+
+            .filter,
+            .sorter {
+                font-size: 1vw;
+                height: 3vw;
+
+            }
+
+            #buttons {
+                width: 70vw;
+                margin: auto;
+            }
+
+
+
+            #ret {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+            #indhold .enkelt {
+                display: grid;
+                grid-template-columns: 2fr 2fr;
+            }
+
+            #luk button {
+                font-size: 3vw;
+            }
+
+
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div id="single">
+        <div id="luk">
+            <button>X</button>
+        </div>
+        <div id="indhold"></div>
+    </div>
+
+    <header>
+        <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+        <div class="pil"><a href="index.html"><img src="img/pil.svg" alt="tilbagepil"></a></div>
+
+        <h1>Menu</h1>
+    </header>
+
+    <main>
+        <div id="buttons">
+            <div id="filtrer">
+                <button class="filter valgt" data-kategori="alle">Alle</button>
+                <button class="filter" data-kategori="tilbordet">Til bordet</button>
+                <button class="filter" data-kategori="forret">Forretter</button>
+                <button class="filter" data-kategori="hovedret">Hovedretter</button>
+                <button class="filter" data-kategori="dessert">Desserter</button>
+            </div>
+
+            <div id="sortering">
+                <button class="sorter valgt a_z">Navn A til Å</button>
+                <button class="sorter z_a">Navn Å til A</button>
+                <button class="sorter lav_hoej">Pris lav til høj</button>
+                <button class="sorter hoej_lav">Pris høj til lav</button>
+            </div>
+        </div>
+
+        <div class="overskrift">
+            <h2>Alle</h2>
+        </div>
+        <div id="ret">
+
+        </div>
+    </main>
+    <footer id="kontakt">
+        <p>Smallestræde 42<br>
+            1920 København K<br>
+            lescargot@mail.dk<br>
+            +45 24 35 54 46</p>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+        let alleRetter = [];
+        let filter = "alle";
+
+        hentJson();
+
+        async function hentJson() {
+            let myJson = await fetch("data.json");
+
+            console.log(myJson);
+            alleRetter = await myJson.json();
+            console.log(alleRetter);
+            /*alleRetter.sort((a, b) => {
+                return (a.type - b.type);
+            });*/
+
+            alleRetter.sort((a, b) => {
+                return a.kategori.localeCompare(b.kategori);
+            });
+
+            visRetter();
+        }
+
+
+
+        function visRetter() {
+
+            let destination = document.querySelector("#ret");
+            destination.innerHTML = "";
+            alleRetter.forEach(ret => {
+                if (filter == "alle" || /*betyder "eller"*/ filter == ret.kategori) {
+                    let template =
+                        `<div class="enkelt">
+                                <img class="billedespek" src=img/mad/${ret.billede}.jpg>
+                                <div class="tekst">
+                                <h2>~ ${ret.navn} ~</h2>
+                                </div>
+                         </div>`;
+
+                    destination.insertAdjacentHTML("beforeend", template);
+
+                    destination.lastElementChild.addEventListener("click", visSingle);
+
+
+
+
+
+                    function visSingle() {
+                        document.querySelector("#indhold").innerHTML = `
+                                    <div class="enkelt">
+                                    <img class="billedespek" src=img/mad/${ret.billede}.jpg>
+                                    <div class="tekst">
+                                    <h2>${ret.navn}</h2>
+                                <p>${ret.beskrivelse}</p>
+                                <h3>${ret.pris}</h3>
+                                    </div>
+                                    </div>`;
+
+                        document.querySelector("#single").style.display = "block";
+                        document.querySelector("#luk").addEventListener("click", close);
+
+                        function close(ret) {
+                            document.querySelector("#single").style.display = "none";
+                            visRetter();
+                        }
+                    }
+
+
+                }
+            });
+
+        }
+
+
+
+
+        hentJson();
+
+
+
+        document.querySelectorAll(".filter").forEach(but => {
+            but.addEventListener("click", filtrering);
+
+        });
+
+
+        document.querySelectorAll(".sorter").forEach(but => {
+            but.addEventListener("click", sortering);
+
+        });
+
+
+
+        function filtrering() {
+            document.querySelectorAll(".filter").forEach(but => {
+                but.classList.remove("valgt");
+            });
+            document.querySelector("h2").textContent = this.textContent;
+            filter = this.getAttribute("data-kategori");
+            this.classList.add("valgt");
+            console.log(filter);
+            visRetter();
+        }
+
+
+        function sortering() {
+
+            document.querySelectorAll(".sorter").forEach(but => {
+                but.classList.remove("valgt");
+            });
+
+            this.classList.add("valgt");
+
+
+
+
+
+            if (this.classList.contains("a_z")) {
+                alleRetter.sort((a, b) => {
+                    return a.navn.localeCompare(b.navn);
+                });
+            } else if (this.classList.contains("z_a")) {
+
+                alleRetter.sort((b, a) => {
+                    return a.navn.localeCompare(b.navn);
+                });
+            } else if (this.classList.contains("lav_hoej")) {
+                alleRetter.sort((a, b) => {
+                    return (a.pris - b.pris);
+                });
+            } else if (this.classList.contains("hoej_lav")) {
+                alleRetter.sort((b, a) => {
+                    return (a.pris - b.pris);
+                });
+            }
+
+            visRetter();
+        }
+    </script>
+
+</body>
+
+</html>
